@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    45deg,
+    rgba(49, 61, 166, 1) 0%,
+    rgba(71, 85, 195, 1) 51%,
+    rgba(66, 191, 217, 1) 100%
+  );
+  position: relative;
+}
+
+.clock {
+  height: 300px;
+  width: 300px;
+  border: 10px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  left: 40%;
+  top: 25%;
+}
+
+.hour,
+.minute,
+.second {
+  position: absolute;
+  height: 6px;
+  width: 135px;
+  background-color: black;
+  top: 50%;
+  left: 2%;
+  transform-origin: 100%;
+}
+
+.hour {
+  width: 100px;
+  left: 14%;
+}
